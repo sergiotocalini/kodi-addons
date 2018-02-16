@@ -19,52 +19,37 @@ _handle = int(sys.argv[1])
 # Here we use a fixed set of properties simply for demonstrating purposes
 # In a "real life" plugin you will need to get info and links to video files/streams
 # from some web-site or online service.
-VIDEOS = {'Season 01': [{'name': 'Crab',
-                       'thumb': 'http://www.vidsplay.com/wp-content/uploads/2017/04/crab-screenshot.jpg',
-                       'video': 'http://www.vidsplay.com/wp-content/uploads/2017/04/crab.mp4',
-                       'genre': 'Animals'},
-                      {'name': 'Alligator',
-                       'thumb': 'http://www.vidsplay.com/wp-content/uploads/2017/04/alligator-screenshot.jpg',
-                       'video': 'http://www.vidsplay.com/wp-content/uploads/2017/04/alligator.mp4',
-                       'genre': 'Animals'},
-                      {'name': 'Turtle',
-                       'thumb': 'http://www.vidsplay.com/wp-content/uploads/2017/04/turtle-screenshot.jpg',
-                       'video': 'http://www.vidsplay.com/wp-content/uploads/2017/04/turtle.mp4',
-                       'genre': 'Animals'}
-                      ],
-            'Season 02': [{'name': 'Postal Truck',
-                      'thumb': 'http://www.vidsplay.com/wp-content/uploads/2017/05/us_postal-screenshot.jpg',
-                      'video': 'http://www.vidsplay.com/wp-content/uploads/2017/05/us_postal.mp4',
-                      'genre': 'Cars'},
-                     {'name': 'Traffic',
-                      'thumb': 'http://www.vidsplay.com/wp-content/uploads/2017/05/traffic1-screenshot.jpg',
-                      'video': 'http://www.vidsplay.com/wp-content/uploads/2017/05/traffic1.mp4',
-                      'genre': 'Cars'},
-                     {'name': 'Traffic Arrows',
-                      'thumb': 'http://www.vidsplay.com/wp-content/uploads/2017/05/traffic_arrows-screenshot.jpg',
-                      'video': 'http://www.vidsplay.com/wp-content/uploads/2017/05/traffic_arrows.mp4',
-                      'genre': 'Cars'}
-                     ],
-            'Season 03': [{'name': 'Chicken',
-                      'thumb': 'http://www.vidsplay.com/wp-content/uploads/2017/05/bbq_chicken-screenshot.jpg',
+VIDEOS = {
+        'Season 03': [
+             {'name': 'Chicken',
+              'thumb': 'http://www.vidsplay.com/wp-content/uploads/2017/05/bbq_chicken-screenshot.jpg',
                       'video': 'http://www.vidsplay.com/wp-content/uploads/2017/05/bbqchicken.mp4',
-                      'genre': 'Food'},
-                     {'name': 'Hamburger',
-                      'thumb': 'http://www.vidsplay.com/wp-content/uploads/2017/05/hamburger-screenshot.jpg',
-                      'video': 'http://www.vidsplay.com/wp-content/uploads/2017/05/hamburger.mp4',
-                      'genre': 'Food'},
-                     {'name': 'Pizza',
-                      'thumb': 'http://www.vidsplay.com/wp-content/uploads/2017/05/pizza-screenshot.jpg',
-                      'video': 'http://www.vidsplay.com/wp-content/uploads/2017/05/pizza.mp4',
-                      'genre': 'Food'}
-                     ],
-             'Season 06': [{'name': '6x01 - El diabolico Bart',
-                          'thumb': 'https://2.bp.blogspot.com/-Ft0IXGgGWY0/Wn94spc-N7I/AAAAAAABG2Q/SLmlSyp5mRwqXdbh8f2bk6U8ozSneYNDwCLcBGAs/s200/21.jpg&w=150&h=85&zc=1',
-                          'video': 'https://content-na.drive.amazonaws.com/cdproxy/templink/0H8U9kEQc9SMkRF-uVO6fFtJGNrLnADUPMhDZoZ3hAYeJxFPc',
-                          'genre': 'Simpsonizados'}
-                     ],
-
-             }
+                      'genre': 'Food'
+             },
+         ],
+         'Season 06': [
+             {'name': '6x01 - El diabolico Bart',
+              'thumb': 'https://2.bp.blogspot.com/-Ft0IXGgGWY0/Wn94spc-N7I/AAAAAAABG2Q/SLmlSyp5mRwqXdbh8f2bk6U8ozSneYNDwCLcBGAs/s200/21.jpg',
+              'video': 'https://content-na.drive.amazonaws.com/cdproxy/templink/0H8U9kEQc9SMkRF-uVO6fFtJGNrLnADUPMhDZoZ3hAYeJxFPc',
+              'genre': 'Los Simpsons compran una pileta y disfrutan de una inmediata popularidad. Pero Bart se rompe una pierna, y pasa el verano en la ventana de su pieza, mirando a los vecinos con un telescopio. Se aburre hasta que ve a Ned Flanders matar a su esposa.'
+             },
+             {'name': '6x02 - La rival de Lisa',
+              'thumb': 'https://image.tmdb.org/t/p/original/gw2MG9ImULSND503EsOueuBV2dK.jpg',
+              'video': 'https://content-eu.drive.amazonaws.com/cdproxy/templink/JxHJgBjKK4Usdvix6yrbRdDqcelEOZrmVmFknarZzHEeJxFPc',
+              'genre': 'Una nueva compañera de Lisa es más inteligente, más joven y toca mejor el saxo que ella, situación que asusta a Lisa. Mientras, Homero encuentra un camión de azúcar volcado y empieza a vender azúcar. Estrella invitada: Winona Ryder.'
+             },
+             {'name': '6x03 - Recuerdos de amor',
+              'thumb': 'https://image.tmdb.org/t/p/original/cfxlTb5adP02ihAXveNyUM4bnJl.jpg',
+              'video': 'https://content-eu.drive.amazonaws.com/cdproxy/templink/_gXA1UH8kTw_-uQBTVKcB7Cy-zjKKOHf2HhFPQ6XqrUeJxFPc',
+              'genre': 'Después de leer una novela romántica, Marge anima a la familia a recordar sus romances del pasado, lo que sirve como excusa para presentar fragmentos de episodios anteriores.'
+             },
+             {'name': '6x04 - La tierra de Tomy y Daly',
+              'thumb': 'https://image.tmdb.org/t/p/original/5u7BWr0Q6rqm0MZAgp2dz0vFULs.jpg',
+              'video': 'https://content-eu.drive.amazonaws.com/cdproxy/templink/bZ8tNIqlmS5wzo7zxGjRFrW9U1dRXf9lQYavMEmgPJEeJxFPc',
+              'genre': 'El viaje familiar a la tierra de Tomy y Daly, el lugar más violento de la Tierra, es una carga hasta que todos los robots enloquecen y quieren asesinar a la familia.'
+             },
+         ],
+}
 
 
 def get_url(**kwargs):
