@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.simpsonizados"
+<addon id="plugin.video.simpsons"
 version="1.0.0"
-name="Simpsonizados"
+name="Simpsons"
 provider-name="Sergio Tocalini Joerg">
 <requires>
   <import addon="xbmc.python" version="2.24.0"/>
@@ -11,7 +11,7 @@ provider-name="Sergio Tocalini Joerg">
   <provides>video</provides>
 </extension>
 <extension point="xbmc.addon.metadata">
-  <summary lang="en">Simpsonizados</summary>
+  <summary lang="en">Simpsons</summary>
   <description lang="en">An example video plugin for Kodi mediacenter.</description>
   <disclaimer lang="en">Free sample videos are provided by www.vidsplay.com.</disclaimer>
   <assets>
