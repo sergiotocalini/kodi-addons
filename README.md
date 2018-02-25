@@ -1,2 +1,2 @@
-# plugin.video.simpsonizados
-Kodi Addon - Simpsonizados
+# plugin.video.simpsons
+Kodi Addon - Simpsons
