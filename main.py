@@ -91,10 +91,10 @@ VIDEOS = {
              },
          ],
         'Season 02': [
-             {'name': '03x01 - Stark Raving Dad',
-              'thumb': 'https://image.tmdb.org/t/p/original/4FF7LnpvqQQKgixMoluxtcqAnEr.jpg',
-              'video': 'https://openload.co/embed/3GM8BNfH1sA',
-              'genre': "Mistakenly committed to a mental hospital, Homer meets a tall, stocky white man who claims to be Michael Jackson.",
+             {'name': "02x01 - Bart Gets an F",
+              'thumb': 'https://image.tmdb.org/t/p/original/cGH65vM4uWGosOjIyLLAuh1sqSD.jpg',
+              'video': 'https://openload.co/embed/ORrtUVF-K_o',
+              'genre': "In danger of flunking the fourth grade, Bart strikes a deal with the class brain: in exchange for tutoring, he will help Martin become more popular.",
              },
          ],
         'Season 03': [
