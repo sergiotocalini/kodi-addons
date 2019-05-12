@@ -1,2 +1,2 @@
-# plugin.video.simpsons
-Kodi Addon - Simpsons
+# kodi-addons
+Kodi - Addons
